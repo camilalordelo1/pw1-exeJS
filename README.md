@@ -7,3 +7,5 @@
     ✔️ CSS
     ✔️ Javascript
 
+<hr>
+Disponível para visualização em: https://camilalordelo1.github.io/pw1-exeJS/
