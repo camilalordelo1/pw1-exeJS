@@ -7,3 +7,4 @@
     ✔️ CSS
     ✔️ Javascript
 
+#### Acesse o projeto hospedado no GitHub pages [aqui](https://camilalordelo1.github.io/pw1-exeJS/)
