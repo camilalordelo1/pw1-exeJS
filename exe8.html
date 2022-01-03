@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Exercício 8 </title>
+	</head>
+	<body>
+	<style>
+			p {
+			text-align: center;
+			font-size: 20pt;
+			color: white;
+			}
+			td {
+			color: white;
+			text-align: center;
+			}
+			
+			table {
+			align: center;
+			background-color: black;
+			width: 400px;
+			height: 250px;
+			border-style: outset;
+			border-color: gray;
+			border-width: 10px;
+			}
+			
+			.rodape {
+			color: white;
+			background-color: red;
+			}
+	</style>
+	<script language="javascript">
+				var C;
+				var F;
+				function Temperatura() {
+					C = document.MeuFormulario.Campo1.value;
+					F = (9 * parseInt(C) + 160)/5
+					alert ("Temperatura em Fahrenheit = " + F.toString() + "ºF");
+				}			
+	</script>
+	
+		<table align="center">
+		<form name="MeuFormulario">
+		<tr>
+			<td colspan="2">
+			
+				<br>
+				<p align="center" font size="4"> <b> CONVERSÃO DE CELSIUS EM FAHRENHEIT <b> <br></font>
+				<br>
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Celsius (C°):
+			</td>
+			<td>
+				<input type="text" name="Campo1">
+			</td>
+		</tr>
+		<tr>
+			<td height="10px" colspan="2">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input class="rodape" type="button" value="EXECUTAR" onclick="Temperatura() ">
+				<input class="rodape" type="reset" value="LIMPAR">
+				<input class="rodape" type="button" name="FECHAR" value="FECHAR" onclick="window.close()">
+			</td>
+		</tr>
+		</table>
+		</form>
+			
+		
+	</body>
+</html>

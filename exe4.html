@@ -1,0 +1,110 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Exercício 4 </title>
+	</head>
+	<body>
+	<style>
+			p {
+			text-align: center;
+			font-size: 20pt;
+			color: white;
+			}
+			td {
+			color: white;
+			text-align: center;
+			}
+			
+			table {
+			align: center;
+			background-color: black;
+			width: 400px;
+			height: 250px;
+			border-style: outset;
+			border-color: gray;
+			border-width: 10px;
+			}
+			
+			.rodape {
+			color: white;
+			background-color: red;
+			}
+	</style>
+	<script language="javascript">
+				var SB;
+				var HT;
+				var VH;
+				var PD;
+				var TD;
+				var SL;
+				function Volume() {
+					SB = document.MeuFormulario.Campo1.value;
+					HT = document.MeuFormulario.Campo2.value;
+					VH = document.MeuFormulario.Campo3.value;
+					PD = document.MeuFormulario.Campo4.value;
+					TD = (PD / 100)*SB;
+					SL = SB - TD;
+					alert ("O salário líquido é de " + SL.toString());
+				}			
+	</script>
+	
+		<table align="center">
+		<form name="MeuFormulario">
+		<tr>
+			<td colspan="2">
+			
+				<br>
+				<p align="center" font size="4"> <b> SALÁRIO <b> <br></font>
+				<br>
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Salário bruto no mês:
+			</td>
+			<td>
+				<input type="text" name="Campo1">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Horas trabalhadas no mês:
+			</td>
+			<td>
+				<input type="text" name="Campo2">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Valor/H trabalhada:
+			</td>
+			<td>
+				<input type="text" name="Campo3">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Percentual de desconto:
+			</td>
+			<td>
+				<input type="text" name="Campo4">
+			</td>
+		</tr>
+		<tr>
+			<td height="10px" colspan="2">
+			</td>
+		</tr>
+			<td colspan="2">
+				<input class="rodape" type="button" value="EXECUTAR" onclick="Volume() ">
+				<input class="rodape" type="reset" value="LIMPAR">
+				<input class="rodape"  type="button" name="FECHAR" value="FECHAR" onclick="window.close()">
+			</td>
+		</table>
+		</form>
+			
+		
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Exercício 2 </title>
+	</head>
+	<body>
+	<style>
+			p {
+			text-align: center;
+			font-size: 20pt;
+			color: white;
+			}
+			td {
+			color: white;
+			text-align: center;
+			}
+			
+			table {
+			align: center;
+			background-color: black;
+			width: 400px;
+			height: 250px;
+			border-style: outset;
+			border-color: gray;
+			border-width: 10px;
+			}
+			
+			.rodape {
+			color: white;
+			background-color: red;
+			}
+	</style>
+	<script language="javascript">
+				var V1;
+				var V2;
+				var ADICAO;
+				var SUB;
+				var MULTI;
+				var DIV;
+				function Executar() {
+					V1 = document.MeuFormulario.Campo1.value;
+					V2 = document.MeuFormulario.Campo2.value;
+					ADICAO = parseInt(V1) + parseInt(V2);
+					SUB = parseInt(V1) - parseInt(V2);
+					MULTI = parseInt(V1) * parseInt(V2);
+					DIV = parseInt(V1) / parseInt(V2);
+					alert ("A soma equivale a " + ADICAO.toString() + 
+					"\nA subtração equivale a " + SUB.toString() +
+					"\nA multiplicação equivale a " + MULTI.toString() + 
+					"\nA divisão equivale a " + DIV.toString());
+				}			
+	</script>
+	
+		<table align="center">
+		<form name="MeuFormulario">
+		<tr>
+			<td colspan="2">
+			
+				<br>
+				<p align="center" font size="4"> <b> CALCULADORA <b> <br></font>
+				<br>
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Entre com o primeiro número:
+			</td>
+			<td>
+				<input type="text" name="Campo1">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Entre com o segundo número:
+			</td>
+			<td>
+				<input type="text" name="Campo2">
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2">
+			</td>
+		</tr>
+		<tr>
+			<td height="10px" colspan="2">
+			</td>
+		</tr>
+			<td colspan="2">
+				<input class="rodape" type="button" value="EXECUTAR" onclick="Executar() ">
+				<input class="rodape" type="reset" value="LIMPAR">
+				<input class="rodape" type="button" name="Fechar" value="Fechar" onclick="window.close()">
+			</td>
+		</table>
+		</form>
+			
+		
+	</body>
+</html>

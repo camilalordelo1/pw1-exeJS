@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Exercício 7 </title>
+	</head>
+	<body>
+	<style>
+			p {
+			text-align: center;
+			font-size: 20pt;
+			color: white;
+			}
+			td {
+			color: white;
+			text-align: center;
+			}
+			
+			table {
+			align: center;
+			background-color: black;
+			width: 400px;
+			height: 250px;
+			border-style: outset;
+			border-color: gray;
+			border-width: 10px;
+			}
+			
+			.rodape {
+			color: white;
+			background-color: red;
+			}
+	</style>
+	<script language="javascript">
+				var A;
+				var B;
+				var AB;
+				function Pitagoras() {
+					A = document.MeuFormulario.Campo1.value;
+					B = document.MeuFormulario.Campo2.value;
+					AB = Math.pow(parseInt(A), 2) + Math.pow(parseInt(B), 2)
+					alert (+ A + "² + " + B + "² = " + AB.toString());
+				}			
+	</script>
+	
+		<table align="center">
+		<form name="MeuFormulario">
+		<tr>
+			<td colspan="2">
+			
+				<br>
+				<p align="center" font size="4"> <b> SOMA DOS QUADRADOS <b> <br></font>
+				<br>
+			<hr>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Digite o valor A:
+			</td>
+			<td>
+				<input type="text" name="Campo1">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Digite o valor B:
+			</td>
+			<td>
+				<input type="text" name="Campo2">
+			</td>
+		</tr>
+		<tr>
+			<td height="10px" colspan="2">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input class="rodape" type="button" value="EXECUTAR" onclick="Pitagoras() ">
+				<input class="rodape" type="reset" value="LIMPAR">
+				<input class="rodape" type="button" name="FECHAR" value="FECHAR" onclick="window.close()">
+			</td>
+		</tr>
+		</table>
+		</form>
+			
+		
+	</body>
+</html>

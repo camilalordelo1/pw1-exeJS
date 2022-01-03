@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Exercício 1 </title>
+		<style>
+			p {
+			text-align: center;
+			font-size: 20pt;
+			color: white;
+			}
+			td {
+			color: white;
+			text-align: center;
+			}
+			
+			table {
+			align: center;
+			background-color: black;
+			width: 400px;
+			height: 250px;
+			border-style: outset;
+			border-color: gray;
+			border-width: 10px;
+			}
+			
+			.rodape {
+			color: white;
+			background-color: red;
+			}
+		</style>
+		<script language = "Javascript">
+			var NOME;
+			var SOBRENOME;
+			var NOMECOMPLETO;
+			
+			function Nome(){
+			NOME = document.MeuFormulario.Campo1.value;
+			SOBRENOME = document.MeuFormulario.Campo2.value;
+			alert("NOME COMPLETO: "+ NOME + " " + SOBRENOME) 
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		<table align="center">
+		<tr>
+			<td colspan="2">
+			<br>
+			<p> <b> NOME COMPLETO </b> <br>
+			<hr>
+		</tr>
+		<tr>
+			<form name="MeuFormulario">
+			<td>
+				Entre com seu nome:
+			</td>
+			<td>
+				<input type="text" name="Campo1">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				Entre com o sobrenome: 
+			</td>
+			<td>
+			<input type="text" name="Campo2">	
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center"><br>
+				<input class="rodape" type="button" value="Concatenar" onclick="Nome() " >
+				<input class="rodape" type="reset" value="Limpar">
+				<input class="rodape" type="button" name="Fechar" value="Fechar" onclick="window.close()">
+			</form>
+			</td>
+		</tr>
+		</table>
+	</body>
+</html>
